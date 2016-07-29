@@ -1,0 +1,24 @@
+{
+  "name": "icon-gather",
+  "description": "Placeholder for a tool which helps gather all icons in a project. Then it shows them in a html or json file.",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "author": "yanghuabei",
+  "repository": "yanghuabei/icon-gather",
+  "license": "MIT",
+  "scripts": {
+    "compile": "babel src --out-dir lib",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "prepublish": "npm run compile",
+    "test": "babel-node ./node_modules/.bin/isparta cover _mocha"
+  },
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-preset-es2017": "*",
+    "coveralls": "*",
+    "chai": "*",
+    "isparta": "*",
+    "mocha": "*",
+    "sinon": "*"
+  }
+}
